@@ -1,0 +1,95 @@
+#booknow {
+    background-color: rgb(232, 233, 155);
+    padding-bottom: 4%;
+}
+
+.fillup {
+    margin-top: 1%;
+    text-align: center;
+    color: blue;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#vehicle {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#name {
+    margin-top: 1%;
+}
+
+#brands {
+    margin-top: 1%;
+}
+
+#type {
+    margin-top: 1%;
+}
+
+#no {
+    margin-top: 1%;
+}
+
+#password {
+    margin-top: 1%;
+}
+
+.jobs {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#basic {
+    margin-top: 1%;
+}
+
+#next {
+    margin-top: 1%;
+}
+
+#last {
+    margin-top: 1%;
+}
+
+#extra {
+    margin-top: 1%;
+}
+
+.xtracharge {
+    text-align: left;
+    font-family: 'Lora', serif;
+    color: blue
+}
+
+#submit {
+    background-color: aqua;
+    font-family: 'Russo One', sans-serif;
+    color: black;
+}
+
+.submit {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.col-lg-12 {
+    text-align: center;
+}
+
+.bookcopyright {
+    margin-top: 5%;
+    height: 10vh;
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+}
+
+.apple {
+    color: white;
+    text-decoration: none;
+}

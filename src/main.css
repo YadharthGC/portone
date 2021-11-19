@@ -1,0 +1,62 @@
+ .main {
+     height: 100vh;
+     background-image: url(./images/bikey.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+ }
+ 
+ .main_a {
+     padding-top: 1%;
+     display: flex;
+     justify-content: center;
+     align-items: top;
+     gap: 2%;
+ }
+ 
+ #main_icon_a {
+     font-size: 60px;
+     background-color: rgb(82, 87, 87);
+     border: solid 2px white;
+     color: white;
+     border-radius: 5px;
+ }
+ 
+ #main_icon_b {
+     font-size: 60px;
+     background-color: rgb(82, 87, 87);
+     border: solid 2px white;
+     color: white;
+     border-radius: 5px;
+ }
+ 
+ .main_a :hover {
+     color: rgb(45, 219, 219);
+ }
+ 
+ .main_b {
+     line-height: 234%;
+     text-align: center;
+     color: white;
+     padding-right: 54%;
+     padding-top: 12%;
+ }
+ 
+ .welcome {
+     font-size: 40px;
+     text-align: right;
+ }
+ 
+ .motor {
+     font-size: 40px;
+ }
+ 
+ .services {
+     font-size: 75px;
+     font-family: 'Russo One', sans-serif;
+ }
+ 
+ .obito {
+     font-size: 75px;
+     font-family: 'Russo One', sans-serif;
+ }

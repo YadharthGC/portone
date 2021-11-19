@@ -1,0 +1,27 @@
+ #section {
+     font-family: 'Josefin Sans', sans-serif;
+     color: black;
+     background-color: #F8F9FA;
+ }
+ 
+ .bs {
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .parta {
+     flex: 0.5;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .partb {
+     flex: 0.2;
+     text-align: right;
+ }
+ 
+ .asection {
+     text-decoration: none;
+     color: black;
+ }

@@ -1,0 +1,104 @@
+.OS {
+    font-family: 'Russo One', sans-serif;
+    color: black
+}
+
+.OS :hover {
+    color: black;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.home,
+.about,
+.login,
+.book,
+.bookings,
+.booking,
+.feedback {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.main_c {
+    line-height: 234%;
+    text-align: center;
+    color: lightblue;
+    background-image: url(./images/bikec.jpg);
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-size: cover;
+    height: 86vh;
+}
+
+.welcome {
+    font-size: 40px;
+    text-align: right;
+}
+
+.motor {
+    font-size: 40px;
+}
+
+.services {
+    font-size: 75px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.obito {
+    font-size: 75px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.main_welcome {
+    padding-top: 8%;
+}
+
+#solutions {
+    font-family: 'Gideon Roman', cursive;
+    font-size: 27px;
+    border: solid 2px black;
+    margin-top: 3%;
+}
+
+.solutionsimg {
+    height: 66px;
+    width: 60px;
+    object-fit: cover;
+    border: solid 2px black;
+}
+
+#solution {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+}
+
+#about,
+#home,
+#book,
+#bookings,
+#feedback,
+#login {
+    text-decoration: none;
+    color: gray;
+}
+
+#nav :hover {
+    color: rgb(121, 208, 230);
+}
+
+.copyright {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 10vh;
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+}

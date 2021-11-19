@@ -1,0 +1,46 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
+
+table,
+th,
+td,
+tr {
+    border: 3px solid white;
+    border-collapse: collapse;
+    color: white;
+    border-color: white;
+    padding: 1%;
+}
+
+#engine {
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    height: 100vh;
+    background-color: rgb(235, 196, 220);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+.yes {
+    color: rgb(19, 226, 19);
+    text-align: center;
+}
+
+.no {
+    color: red;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}

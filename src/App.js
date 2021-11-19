@@ -20,6 +20,7 @@ import Edit from "./edit";
 import Adminfeed from "./adminfeedback";
 import Adminfind from "./find";
 import Adminedit from "./adminedit";
+import Admintedit from "./admintedit";
 
 function App() {
   return (
@@ -48,6 +49,11 @@ function App() {
           <Route
             path="/adminedit/:id"
             element={<Adminedit />}
+            exact={true}
+          ></Route>
+          <Route
+            path="/admintedit/:id"
+            element={<Admintedit />}
             exact={true}
           ></Route>
         </Routes>

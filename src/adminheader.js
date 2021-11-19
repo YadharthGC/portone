@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "./userhome.css";
 
 function Adminheader() {
-  const history = useNavigate();
+  const navigate = useNavigate();
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
       <div class="container-fluid">
@@ -69,7 +69,7 @@ function Adminheader() {
               type="submit"
               onClick={() => {
                 window.localStorage.removeItem("app_token");
-                history.push("/");
+                navigate("/", { replace: true });
               }}
             >
               Logout

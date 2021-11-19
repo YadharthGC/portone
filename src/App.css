@@ -37,3 +37,12 @@
     height: 100%;
     background-color: rgb(176, 205, 233);
 }
+
+table,
+thead,
+tbody,
+th,
+td,
+tr {
+    font-size: initial;
+}

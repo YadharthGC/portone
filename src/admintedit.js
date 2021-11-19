@@ -9,7 +9,7 @@ import {
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-function Adminedit(props) {
+function Admintedit(props) {
   const [name, setname] = useState([]);
   const [brand, setbrand] = useState([]);
   const [model, setmodel] = useState([]);
@@ -70,7 +70,7 @@ function Adminedit(props) {
         modetwo,
         time
       );
-      navigate("/tmrw", { replace: true });
+      navigate("/today", { replace: true });
       let put = await axios.put(
         `https://yadharthcapstone.herokuapp.com/adminedit/${params.id}`,
         {
@@ -90,7 +90,7 @@ function Adminedit(props) {
           },
         }
       );
-      navigate("/tmrw", { replace: true });
+      navigate("/today", { replace: true });
       fetch();
     } catch (error) {}
   };
@@ -312,4 +312,4 @@ function Adminedit(props) {
   );
 }
 
-export default Adminedit;
+export default Admintedit;

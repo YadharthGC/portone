@@ -108,7 +108,7 @@ function Tbookings() {
                     disabled={e === 1 ? true : false}
                   >
                     <Link
-                      to={`/adminedit/${user._id}`}
+                      to={`/admintedit/${user._id}`}
                       style={{ textDecoration: "none" }}
                       id="spls"
                       disabled={e === 1 ? true : false}

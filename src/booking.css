@@ -26,12 +26,12 @@
  
  .unumber {
      font-family: 'Josefin Sans', sans-serif;
-     font-size: 20px;
+     font-size: initial;
  }
  
  .udetails {
      font-family: 'Josefin Sans', sans-serif;
-     font-size: 20px;
+     font-size: initial;
  }
  
  .bklist {

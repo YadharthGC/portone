@@ -9,7 +9,9 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light" id="nav">
       <div className="container-fluid">
-        <span className="OS">Obito Services</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="OS">Obito Services</span>
+        </Link>
 
         <button
           className="navbar-toggler"

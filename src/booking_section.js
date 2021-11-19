@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "./booking_section.css";
 
 function Section() {
-  const history = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="container-fluid" id="section">
       <div className="bs">
@@ -20,14 +20,17 @@ function Section() {
             <div>Feedback</div>
           </Link>
         </div>
-        <div
-          className="partb"
-          onClick={() => {
-            window.localStorage.removeItem("app_token");
-            history.push("/");
-          }}
-        >
-          Logout
+        <div className="partb">
+          <button
+            type="button"
+            class="btn btn-primary"
+            onClick={() => {
+              window.localStorage.removeItem("app_token");
+              navigate("/userhome");
+            }}
+          >
+            Logout
+          </button>
         </div>
       </div>
     </div>

@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+} from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -14,6 +20,7 @@ function Edit(props) {
   const [modetwo, setmodetwo] = useState([]);
   const [time, settime] = useState([]);
   const navigate = useNavigate();
+  const params = useParams();
 
   useEffect(() => {
     fetch();
@@ -21,7 +28,9 @@ function Edit(props) {
 
   let fetch = async () => {
     try {
-      let did = props.match.params.id;
+      console.log("why");
+      console.log(params.id);
+      let did = params.id;
       console.log(did);
       let get = await axios.get(
         `https://yadharthcapstone.herokuapp.com/editdetails/${did}`,
@@ -45,16 +54,16 @@ function Edit(props) {
       let an = [...get.data[0].number];
       let bn = an.join("");
       setnumber(bn);
-      console.log(name, brand, model, number);
+      console.log(name, model, number);
     } catch (error) {}
   };
 
   let handlechange = async () => {
     try {
       console.log(name, brand, model, number, wash, repair, modeone, modetwo);
-      navigate.push("/tbooks");
+      navigate("/bookings");
       let put = await axios.put(
-        `https://yadharthcapstone.herokuapp.com/edit/${props.match.params.id}`,
+        `https://yadharthcapstone.herokuapp.com/edit/${params.id}`,
         {
           name,
           brand,
@@ -71,16 +80,13 @@ function Edit(props) {
           },
         }
       );
+      navigate("/bookings", { replace: true });
       fetch();
     } catch (error) {}
   };
 
   return (
-    <div
-      className="container-fluid"
-      id="booknow"
-      style={{ backgroundColor: "black" }}
-    >
+    <div className="container-fluid" id="booknow" style={{ marginTop: "-2%" }}>
       <form
         onSubmit={(e) => {
           handlechange(e);
@@ -88,7 +94,7 @@ function Edit(props) {
       >
         <div className="details">
           <div className="fbicon">
-            &nbsp;&nbsp; <u>Tomorrow Bookings:</u>
+            &nbsp;&nbsp; <u>Edit</u>
           </div>
           <div className="row" id="vehicle">
             <div className="col-lg-12" id="name">
@@ -105,7 +111,6 @@ function Edit(props) {
               <label for="brand">Vehicle Brand</label>
               <select
                 id="brand"
-                value={brand}
                 onChange={(e) => setbrand(e.target.value)}
                 required
               >

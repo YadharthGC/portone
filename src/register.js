@@ -15,7 +15,7 @@ function Userregis() {
     e.preventDefault();
     if (password === cpassword) {
       try {
-        navigate("/userlogin");
+        navigate("/login");
         let post = await axios.post(
           "https://yadharthcapstone.herokuapp.com/register",
           {
@@ -23,6 +23,7 @@ function Userregis() {
             password,
           }
         );
+        navigate("/login", { replace: true });
       } catch (error) {}
     } else {
       alert("Password is not matching");

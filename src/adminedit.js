@@ -13,7 +13,7 @@ function Adminedit(props) {
   const [modeone, setmodeone] = useState([]);
   const [modetwo, setmodetwo] = useState([]);
   const [time, settime] = useState([]);
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch();
@@ -62,7 +62,7 @@ function Adminedit(props) {
         modetwo,
         time
       );
-      history.push("/tbooks");
+      navigate("/today", { replace: true });
       let put = await axios.put(
         `https://yadharthcapstone.herokuapp.com/adminedit/${props.match.params.id}`,
         {
@@ -87,7 +87,7 @@ function Adminedit(props) {
   };
 
   return (
-    <div className="container-fluid" id="booknow">
+    <div className="container-fluid" id="booknow" style={{ marginTop: "-2%" }}>
       <form
         onSubmit={(e) => {
           handlechange(e);
@@ -95,7 +95,7 @@ function Adminedit(props) {
       >
         <div className="details">
           <div className="fbicon">
-            &nbsp;&nbsp; <u>Tomorrow Bookings:</u>
+            &nbsp;&nbsp; <u>Edit</u>
           </div>
           <div className="row" id="vehicle">
             <div className="col-lg-12" id="name">

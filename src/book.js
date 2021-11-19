@@ -102,6 +102,7 @@ function Book() {
               },
             }
           );
+          navigate("/bookings", { replace: true });
         } catch (error) {}
       } else {
         alert("Registration no. not valid");

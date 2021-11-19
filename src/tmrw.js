@@ -78,34 +78,37 @@ const renderdata = (data, index) => {
             </td>
             {handlee(user.date)}
             <td>
-              <button
-                type="button"
-                class="btn btn-warning"
-                style={{ color: "white" }}
-                disabled={e === 1 ? true : false}
-              >
-                <Link
-                  to={`/tadminedit/${user._id}`}
-                  style={{ fontFamily: "'Noto Serif', serif" }}
-                  id="spls"
-                  disabled={e === 1 ? true : false}
-                >
-                  Edit
-                </Link>
-              </button>
-              &nbsp;
-              <span className="unumber">
+              <div style={{ color: "white" }}>
                 <button
                   type="button"
-                  class="btn btn-danger"
-                  onClick={() => {
-                    handledelete(user._id);
-                  }}
-                  disabled={d === 1 ? true : false}
+                  class="btn btn-warning"
+                  style={{ color: "white" }}
+                  disabled={e === 1 ? true : false}
                 >
-                  Delete
+                  <Link
+                    to={`/adminedit/${user._id}`}
+                    style={{ textDecoration: "none" }}
+                    id="spls"
+                    disabled={e === 1 ? true : false}
+                  >
+                    <span style={{ color: "white" }}>Edit</span>
+                  </Link>
                 </button>
-              </span>
+              </div>
+              <div>
+                <span className="unumber">
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    onClick={() => {
+                      handledelete(user._id);
+                    }}
+                    disabled={d === 1 ? true : false}
+                  >
+                    Delete
+                  </button>
+                </span>
+              </div>
             </td>
           </tr>
         );

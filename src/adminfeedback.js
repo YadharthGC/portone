@@ -78,9 +78,9 @@ function Adminfeed() {
       let lists = await axios.get(
         "https://yadharthcapstone.herokuapp.com/adminfeed",
         {
-          // headers: {
-          //   Authorization: window.localStorage.getItem("app_token"),
-          // },
+          headers: {
+            Authorization: window.localStorage.getItem("app_token"),
+          },
         }
       );
       setusers([...lists.data]);

@@ -4,22 +4,22 @@
 }
 
 #today {
-    height: 100vh;
+    height: 100%;
     background-color: rgb(165, 231, 159);
 }
 
 #tmrw {
-    height: 100vh;
+    height: 100%;
     background-color: rgb(202, 243, 135);
 }
 
 #all {
-    height: 100vh;
+    height: 100%;
     background-color: rgb(252, 168, 168);
 }
 
 #adminfeedback {
-    height: 100vh;
+    height: 100%;
     background-color: rgb(192, 218, 175);
 }
 
@@ -34,6 +34,6 @@
 }
 
 #find {
-    height: 100vh;
+    height: 100%;
     background-color: rgb(176, 205, 233);
 }

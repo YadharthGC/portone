@@ -8,7 +8,7 @@ import LoginIcon from "@mui/icons-material/Login";
 function Adminlogin() {
   const [mail, setmail] = useState([]);
   const [password, setpassword] = useState([]);
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   let handlesubmit = async (e) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ function Adminlogin() {
         }
       );
       window.localStorage.setItem("app_token", post.data.token);
-      history.push("/tbooks");
+      navigate("/today", { replace: true });
     } catch (error) {}
   };
 

@@ -37,7 +37,7 @@ function App() {
           <Route path="/feedback" element={<Feedback />} exact={true} />
           <Route path="/login" element={<Userlogin />} exact={true} />
           <Route path="/register" element={<Userregis />} exact={true} />
-          <Route path="/edit/:id" component={<Edit />} exact={true}></Route>
+          <Route path="/edit/:id" element={<Edit />} exact={true}></Route>
           {/* Admin////////////////////////// */}
           <Route path="/adminlogin" element={<Adminlogin />} exact={true} />
           <Route path="/today" element={<Tbookings />} exact={true} />

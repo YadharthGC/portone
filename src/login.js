@@ -11,8 +11,6 @@ function Userlogin() {
   const history = useNavigate();
 
   let handlesubmit = async (e) => {
-    history.push("/book");
-    e.preventDefault();
     try {
       let post = await axios.post(
         "https://yadharthcapstone.herokuapp.com/login",
@@ -22,7 +20,7 @@ function Userlogin() {
         }
       );
       window.localStorage.setItem("app_token", post.data.token);
-      history.push("/home");
+      history.push("/book");
     } catch (error) {}
   };
 
@@ -93,7 +91,7 @@ function Userlogin() {
               style={{ textAlign: "center" }}
             >
               <div>
-                <Link to="/userregister" className="nu">
+                <Link to="/register" className="nu">
                   New User?
                 </Link>
               </div>

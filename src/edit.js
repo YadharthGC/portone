@@ -13,7 +13,7 @@ function Edit(props) {
   const [modeone, setmodeone] = useState([]);
   const [modetwo, setmodetwo] = useState([]);
   const [time, settime] = useState([]);
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch();
@@ -24,7 +24,7 @@ function Edit(props) {
       let did = props.match.params.id;
       console.log(did);
       let get = await axios.get(
-        `https://yadharthcapstone.herokuapp.com/admineditdetails/${did}`,
+        `https://yadharthcapstone.herokuapp.com/editdetails/${did}`,
         {
           headers: {
             Authorization: window.localStorage.getItem("app_token"),
@@ -51,20 +51,10 @@ function Edit(props) {
 
   let handlechange = async () => {
     try {
-      console.log(
-        name,
-        brand,
-        model,
-        number,
-        wash,
-        repair,
-        modeone,
-        modetwo,
-        time
-      );
-      history.push("/tbooks");
+      console.log(name, brand, model, number, wash, repair, modeone, modetwo);
+      navigate.push("/tbooks");
       let put = await axios.put(
-        `https://yadharthcapstone.herokuapp.com/adminedit/${props.match.params.id}`,
+        `https://yadharthcapstone.herokuapp.com/edit/${props.match.params.id}`,
         {
           name,
           brand,
@@ -74,7 +64,6 @@ function Edit(props) {
           repair,
           modeone,
           modetwo,
-          time,
         },
         {
           headers: {
@@ -87,7 +76,11 @@ function Edit(props) {
   };
 
   return (
-    <div className="container-fluid" id="booknow">
+    <div
+      className="container-fluid"
+      id="booknow"
+      style={{ backgroundColor: "black" }}
+    >
       <form
         onSubmit={(e) => {
           handlechange(e);

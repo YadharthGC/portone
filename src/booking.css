@@ -1,122 +1,120 @@
-table,
-th,
-td,
-tr {
-    border: 3px solid black;
-    border-collapse: collapse;
-    color: black;
-    border-color: black;
-    padding: 1%;
-    font-size: initial;
-}
-
-table {
-    table-layout: fixed;
-}
-
-#th {
+ #bookingz>table,
+ th,
+ td,
+ tr {
+     border: 3px solid white;
+     border-color: black;
+     padding: 1%;
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: initial;
+     text-align: center;
+     color: black;
+ }
+ 
+ td {
+     height: 100%;
+ }
+ 
+ table {
+     table-layout: fixed;
+ }
+ /* #th {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 27px;
-}
-
-.unumber {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 20px;
-}
-
-.udetails {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 20px;
-}
-
-.bklist {
-    margin-top: 2%;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    font-size: 20px;
-}
-
-.givepw {
-    margin-top: 2%;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    text-align: center;
-}
-
-#namevy {
-    margin-top: 2%;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    text-align: center;
-}
-
-
-/*  */
-
-#bookingz {
-    height: 100%;
-    background-color: rgb(191, 230, 240);
-    background-size: cover;
-    table-layout: fixed;
-}
-
-
-/* ///////////////////////////////////// */
-
-.pagenumbers {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.pagenumbers li {
-    color: white;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.active {
-    background-color: white;
-}
-
-.bookingcopyright {
-    margin-top: 15%;
-    height: 10vh;
-    background-color: lightgray;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: larger;
-}
-
-
-/* //////////////////////////////////////////// */
-
-.pn {
-    margin-top: 3%;
-}
-
-.bookingicon {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    height: 10vh;
-    background-color: lightsteelblue;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: larger;
-}
-
-.bklistz {
-    margin-top: 2%;
-    color: red;
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    text-align: center;
-}
+} */
+ 
+ .unumber {
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 20px;
+ }
+ 
+ .udetails {
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 20px;
+ }
+ 
+ .bklist {
+     margin-top: 2%;
+     color: white;
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 20px;
+ }
+ 
+ .givepw {
+     margin-top: 2%;
+     color: white;
+     font-family: 'Josefin Sans', sans-serif;
+     text-align: center;
+ }
+ 
+ #namevy {
+     margin-top: 2%;
+     color: white;
+     font-family: 'Josefin Sans', sans-serif;
+     text-align: center;
+ }
+ /*  */
+ 
+ #bookingz {
+     height: 100%;
+     background-color: rgb(191, 230, 240);
+     background-size: cover;
+     table-layout: fixed;
+ }
+ /* ///////////////////////////////////// */
+ 
+ .pagenumbers {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .pagenumbers li {
+     color: white;
+     float: left;
+     padding: 8px 16px;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ .active {
+     background-color: white;
+ }
+ 
+ .bookingcopyright {
+     margin-top: 15%;
+     height: 10vh;
+     background-color: lightgray;
+     color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: larger;
+ }
+ /* //////////////////////////////////////////// */
+ 
+ .pn {
+     margin-top: 3%;
+ }
+ 
+ .bookingicon {
+     margin-top: 2%;
+     margin-bottom: 2%;
+     height: 10vh;
+     background-color: lightsteelblue;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: larger;
+ }
+ 
+ .bklistz {
+     margin-top: 2%;
+     color: red;
+     font-family: 'Lora', serif;
+     font-size: 20px;
+     text-align: center;
+ }

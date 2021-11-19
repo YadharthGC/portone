@@ -39,27 +39,21 @@ const renderdata = (data, index) => {
       {data.map((user) => {
         return (
           <tr>
-            <td style={{ width: "14.285%" }}>
-              <span className="unumber">{user.number}</span>
+            <td style={{ width: "16.66%" }}>
+              <span>{user.number}</span>
             </td>
-            <td style={{ width: "14.285%" }}>
-              <span className="udetails">{user.name}</span>
+            <td style={{ width: "16.66%" }}>
+              <span>{user.name}</span>
             </td>
-            <td style={{ width: "14.285%" }}>
-              <span className="udetails">{user.brand}</span>
+            <td style={{ width: "16.66%" }}>
+              <span>{user.brand}</span>
             </td>
-            <td style={{ width: "14.285%" }}>
-              <span className="unumber">
-                {handleadd(user.wash, user.modeone, user.modetwo)}
-              </span>
+            <td style={{ width: "16.66%" }}>
+              <span>{handleadd(user.wash, user.modeone, user.modetwo)}</span>
             </td>
-            <td style={{ width: "14.285%" }}>
-              <span className="udetails">{user.repair}</span>
-            </td>
-            <td style={{ width: "14.285%" }}>
-              <span className="unumber">
-                {user.date}//
-                {user.time}
+            <td style={{ width: "16.66%" }}>
+              <span>
+                {user.date}@{user.time}
               </span>
             </td>
             {handlee(user.date)}
@@ -72,7 +66,7 @@ const renderdata = (data, index) => {
               >
                 <Link
                   to={`/edit/${user._id}`}
-                  style={{ fontFamily: "'Noto Serif', serif" }}
+                  style={{ textDecoration: "none" }}
                   id="spls"
                   disabled={e === 1 ? true : false}
                 >
@@ -181,13 +175,12 @@ function Bookings() {
           <table className="table">
             <thead id="th">
               <tr>
-                <td style={{ width: "14.285%" }}>Plate no.</td>
-                <td style={{ width: "14.285%" }}>Name</td>
-                <td style={{ width: "14.285%" }}>Brand</td>
-                <td style={{ width: "14.285%" }}>Amount</td>
-                <td style={{ width: "14.285%" }}>Extra Fees</td>
-                <td style={{ width: "14.285%" }}> Date</td>
-                <td style={{ width: "14.285%" }}>Action</td>
+                <td style={{ width: "16.66%" }}>Plate no.</td>
+                <td style={{ width: "16.66%" }}>Name</td>
+                <td style={{ width: "16.66%" }}>Brand</td>
+                <td style={{ width: "16.66%" }}>Amount</td>
+                <td style={{ width: "16.66%" }}> Date</td>
+                <td style={{ width: "16.66%" }}>Action</td>
               </tr>
             </thead>
             {renderdata(currentitems)}

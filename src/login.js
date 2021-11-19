@@ -12,6 +12,7 @@ function Userlogin() {
 
   let handlesubmit = async (e) => {
     try {
+      e.preventDefault();
       let post = await axios.post(
         "https://yadharthcapstone.herokuapp.com/login",
         {
@@ -20,7 +21,7 @@ function Userlogin() {
         }
       );
       window.localStorage.setItem("app_token", post.data.token);
-      await navigate("/book");
+      navigate("/book", { replace: true });
     } catch (error) {}
   };
 

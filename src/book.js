@@ -19,7 +19,7 @@ function Book() {
   const [modeone, setmodeone] = useState([]);
   const [modetwo, setmodetwo] = useState([]);
   const [day, setday] = useState([]);
-  const history = useNavigate();
+  const navigate = useNavigate();
   //dates
   //tmrw
   var dates = new Date();
@@ -46,7 +46,7 @@ function Book() {
   /////////////////
   var finals = [{ a: tomorrowdate }, { a: theyonedate }, { a: theytwodate }];
   console.log(finals);
-  let handlecreate = async () => {
+  let handlecreate = async (e) => {
     var dname = name;
     var sname = dname.split("");
     var x = 0,
@@ -80,7 +80,7 @@ function Book() {
       if (y == 1) {
         try {
           console.log(dname);
-          history.push("/bookings");
+          navigate("/bookings");
           let post = await axios.post(
             "https://yadharthcapstone.herokuapp.com/bookings",
             {
@@ -105,6 +105,7 @@ function Book() {
         } catch (error) {}
       } else {
         alert("Registration no. not valid");
+        e.preventDefault();
       }
     } else {
       alert("Name not Valid");

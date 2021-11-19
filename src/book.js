@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "./header";
 import "./book.css";
 import Section from "./booking_section";
+import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
 
 function Book() {
   const [name, setname] = useState([]);
@@ -113,6 +114,10 @@ function Book() {
     <div className="container-fluid" id="booknow">
       <Header></Header>
       <Section></Section>
+      <div className="booknowicon">
+        <BookmarkAddedIcon className="bookingsicon" />
+        Book now
+      </div>
       <form
         onSubmit={(e) => {
           handlecreate(e);

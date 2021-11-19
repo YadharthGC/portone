@@ -8,7 +8,7 @@ import "./login.css";
 function Userlogin() {
   const [mail, setmail] = useState([]);
   const [password, setpassword] = useState([]);
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   let handlesubmit = async (e) => {
     try {
@@ -20,7 +20,7 @@ function Userlogin() {
         }
       );
       window.localStorage.setItem("app_token", post.data.token);
-      history.push("/book");
+      await navigate("/book");
     } catch (error) {}
   };
 

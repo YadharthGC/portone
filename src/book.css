@@ -93,3 +93,16 @@
     color: white;
     text-decoration: none;
 }
+
+.booknowicon {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 10vh;
+    background-color: lightsteelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+}

@@ -9,13 +9,13 @@ function Userregis() {
   const [mail, setmail] = useState([]);
   const [password, setpassword] = useState([]);
   const [cpassword, setcpasssword] = useState([]);
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   let handlesubmit = async (e) => {
     e.preventDefault();
     if (password === cpassword) {
       try {
-        history.push("/userlogin");
+        navigate("/userlogin");
         let post = await axios.post(
           "https://yadharthcapstone.herokuapp.com/register",
           {
@@ -103,7 +103,7 @@ function Userregis() {
           </form>
           <div className="col-lg-12" id="type" style={{ textAlign: "center" }}>
             <div>
-              <Link to="/userlogin" className="nu">
+              <Link to="/login" className="nu">
                 Already an User?
               </Link>
             </div>
